@@ -36,3 +36,31 @@ Guía de ejecución y contratos: [GUIA_ANDROID_API.md](GUIA_ANDROID_API.md).
 
 
 Reemplaza `JARDIN-XX` por la clave real de la tarea antes del commit. Revisa `git status` para confirmar que `local.properties`, `.idea`, `.gradle`, `build` y archivos `.env` no aparezcan.
+
+## Evidencias del Sprint 1
+
+Estas capturas fueron recibidas y guardadas en `evidencias/sprint_1/`. Muestran pantallas reales con la sesión iniciada. El reporte mensual es evidencia complementaria, pero no reemplaza el historial por fecha de HU-10.
+
+| Archivo | Evidencia |
+|---|---|
+| `inicio_jornada.png` | Inicio de jornada y accesos a llegada, alimentación y entrega. |
+| `resumen_administracion.png` | Resumen de administración, asistencia, inventario y alertas. |
+| `reporte_mensual.png` | Reporte mensual de asistencia, complementación e inventario. |
+
+### Inicio de jornada
+
+![Inicio de jornada](evidencias/sprint_1/inicio_jornada.png)
+
+### Resumen de administración
+
+![Resumen de administración](evidencias/sprint_1/resumen_administracion.png)
+
+### Reporte mensual
+
+![Reporte mensual](evidencias/sprint_1/reporte_mensual.png)
+
+**Revisión pendiente:** en `reporte_mensual.png` el indicador muestra `-3 ausentes`; corregir ese cálculo antes de presentar el reporte como resultado correcto.
+
+Aún falta evidencia visual específica de HU-03 (perfil del niño y acudientes) y HU-10 (historial por fecha, con registros y sin registros), además del formulario de agregar acudiente y la persistencia tras reiniciar la API.
+
+
