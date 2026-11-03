@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="verde_jardin">#285943</color>
+    <color name="verde_oscuro">#285943</color>
+    <color name="verde_suave">#DCEADF</color>
+    <color name="azul_cielo">#8EB9C4</color>
+    <color name="azul_suave">#E7F0F1</color>
+    <color name="azul_texto">#315A61</color>
+    <color name="amarillo_sol">#E9BD5B</color>
+    <color name="amarillo_suave">#F8EDC8</color>
+    <color name="amarillo_texto">#725311</color>
+    <color name="coral_suave">#D77B67</color>
+    <color name="coral_fondo">#F8E7E1</color>
+    <color name="coral_critico">#B94E44</color>
+    <color name="coral_texto">#8A342F</color>
+    <color name="texto">#27352D</color>
+    <color name="texto_suave">#596B60</color>
+    <color name="borde">#D8DED5</color>
+    <color name="borde_input">#BFCBC2</color>
+    <color name="gris_suave">#EEF0EC</color>
+    <color name="fondo">#F8F4E9</color>
+    <color name="blanco">#FFFFFF</color>
+</resources>

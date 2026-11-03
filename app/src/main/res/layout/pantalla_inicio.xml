@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:textColor="@color/texto_suave"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/greeting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/texto"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/icono_jardin"
+                    android:contentDescription="Jardín" />
+
+                <TextView
+                    android:id="@+id/avatarButton"
+                    android:contentDescription="Perfil de administración"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/fondo_circulo_azul"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="AD"
+                    android:textColor="@color/azul_texto"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/fondo_tarjeta"
+                android:orientation="horizontal"
+                android:paddingVertical="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/totalCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/texto"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Niños"
+                        android:textColor="@color/texto_suave"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/borde" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/arrivedCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/verde_oscuro"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Llegaron"
+                        android:textColor="@color/texto_suave"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/borde" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pendingCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/amarillo_texto"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pendientes"
+                        android:textColor="@color/texto_suave"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Ruta de cuidado"
+                android:textColor="@color/texto"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+                        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="Llegada" android:textColor="@color/verde_oscuro" android:textSize="12sp" android:textStyle="bold" />
+                <View android:layout_width="18dp" android:layout_height="1dp" android:background="@color/borde" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="Alimentación" android:textColor="@color/amarillo_texto" android:textSize="12sp" android:textStyle="bold" />
+                <View android:layout_width="18dp" android:layout_height="1dp" android:background="@color/borde" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="Entrega" android:textColor="@color/azul_texto" android:textSize="12sp" android:textStyle="bold" />
+            </LinearLayout>
+<LinearLayout
+                android:id="@+id/actionAttendance"
+                style="@style/Accion"
+                android:layout_marginTop="10dp">
+                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/fondo_icono_verde" android:padding="9dp" android:src="@drawable/icono_verificacion" android:tint="@color/verde_oscuro" android:contentDescription="Asistencia" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Asistencia" android:textColor="@color/texto" android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Registrar llegada de los niños" android:textColor="@color/texto_suave" android:textSize="12sp" />
+                </LinearLayout>
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icono_flecha_derecha" android:tint="@color/texto_suave" android:contentDescription="Ir" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionComplement"
+                style="@style/Accion"
+                android:layout_marginTop="8dp">
+                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/fondo_icono_amarillo" android:padding="9dp" android:src="@drawable/icono_alimento" android:tint="@color/amarillo_texto" android:contentDescription="Complementación" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Complementación alimentaria" android:textColor="@color/texto" android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Registrar entregas del día" android:textColor="@color/texto_suave" android:textSize="12sp" />
+                </LinearLayout>
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icono_flecha_derecha" android:tint="@color/texto_suave" android:contentDescription="Ir" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionDelivery"
+                style="@style/Accion"
+                android:layout_marginTop="8dp">
+                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/fondo_icono_azul" android:padding="9dp" android:src="@drawable/icono_salida" android:tint="@color/azul_texto" android:contentDescription="Entregas" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Entregas" android:textColor="@color/texto" android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Salida con acudientes autorizados" android:textColor="@color/texto_suave" android:textSize="12sp" />
+                </LinearLayout>
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icono_flecha_derecha" android:tint="@color/texto_suave" android:contentDescription="Ir" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pendientes de salida"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/seeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Ver todos"
+                    android:textColor="@color/verde_oscuro"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pendingList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo_tarjeta"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/navegacion_inferior" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

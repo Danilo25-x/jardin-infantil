@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADMINISTRACIÓN" android:textColor="@color/texto_suave" android:textSize="11sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Resumen general" android:textColor="@color/texto" android:textSize="24sp" android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView android:layout_width="56dp" android:layout_height="28dp" android:layout_marginEnd="10dp" android:src="@drawable/icono_hoja" android:tint="@color/azul_cielo" android:contentDescription="Jardín" />
+
+                <TextView
+                    android:id="@+id/avatarButton"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/fondo_circulo_azul"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="AM"
+                    android:textColor="@color/azul_texto"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/monthLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/fondo_estado_borde"
+                    android:drawableStart="@drawable/icono_calendario"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/texto"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="14dp"
+                    android:text="Octubre 2026"
+                    android:textColor="@color/texto"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/updatedAt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/texto_suave"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_tarjeta"
+                        android:orientation="vertical"
+                        android:padding="14dp">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:background="@drawable/fondo_icono_verde"
+                            android:padding="8dp"
+                            android:src="@drawable/icono_ninos"
+                            android:tint="@color/verde_oscuro"
+                            android:contentDescription="Niños registrados" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Niños registrados"
+                            android:textColor="@color/texto_suave"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/metricChildren"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/texto"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                <View android:layout_width="10dp" android:layout_height="1dp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_tarjeta"
+                        android:orientation="vertical"
+                        android:padding="14dp">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:background="@drawable/fondo_icono_azul"
+                            android:padding="8dp"
+                            android:src="@drawable/icono_verificacion"
+                            android:tint="@color/azul_texto"
+                            android:contentDescription="Asistencia de hoy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Asistencia de hoy"
+                            android:textColor="@color/texto_suave"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/metricArrived"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/texto"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_tarjeta"
+                        android:orientation="vertical"
+                        android:padding="14dp">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:background="@drawable/fondo_icono_amarillo"
+                            android:padding="8dp"
+                            android:src="@drawable/icono_alimento"
+                            android:tint="@color/amarillo_texto"
+                            android:contentDescription="Complementos entregados" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Complementos entregados"
+                            android:textColor="@color/texto_suave"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/metricComplements"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/texto"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                <View android:layout_width="10dp" android:layout_height="1dp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_tarjeta"
+                        android:orientation="vertical"
+                        android:padding="14dp">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:background="@drawable/fondo_icono_coral"
+                            android:padding="8dp"
+                            android:src="@drawable/icono_alerta"
+                            android:tint="@color/coral_texto"
+                            android:contentDescription="Alertas de inventario" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Alertas de inventario"
+                            android:textColor="@color/texto_suave"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/metricAlerts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/texto"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Gestión"
+                android:textColor="@color/texto"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/manageChildren"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_tarjeta"
+                        android:clickable="true"
+                        android:drawablePadding="12dp"
+                        android:drawableStart="@drawable/icono_ninos"
+                        android:drawableTint="@color/verde_oscuro"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="14dp"
+                        android:text="Niños"
+                        android:textColor="@color/texto"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                <View android:layout_width="10dp" android:layout_height="1dp" />
+                    <TextView
+                        android:id="@+id/manageAttendance"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_tarjeta"
+                        android:clickable="true"
+                        android:drawablePadding="12dp"
+                        android:drawableStart="@drawable/icono_verificacion"
+                        android:drawableTint="@color/verde_oscuro"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="14dp"
+                        android:text="Asistencia"
+                        android:textColor="@color/texto"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/manageComplement"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_tarjeta"
+                        android:clickable="true"
+                        android:drawablePadding="12dp"
+                        android:drawableStart="@drawable/icono_alimento"
+                        android:drawableTint="@color/amarillo_texto"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="14dp"
+                        android:text="Complementación"
+                        android:textColor="@color/texto"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                <View android:layout_width="10dp" android:layout_height="1dp" />
+                    <TextView
+                        android:id="@+id/manageInventory"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_tarjeta"
+                        android:clickable="true"
+                        android:drawablePadding="12dp"
+                        android:drawableStart="@drawable/icono_caja"
+                        android:drawableTint="@color/verde_oscuro"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="14dp"
+                        android:text="Inventario"
+                        android:textColor="@color/texto"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/manageReports"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fondo_tarjeta"
+                        android:clickable="true"
+                        android:drawablePadding="12dp"
+                        android:drawableStart="@drawable/icono_grafica"
+                        android:drawableTint="@color/azul_texto"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="14dp"
+                        android:text="Reportes"
+                        android:textColor="@color/texto"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                <View android:layout_width="10dp" android:layout_height="1dp" />
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/fondo_aviso"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icono_alerta" android:tint="@color/amarillo_texto" android:contentDescription="Alerta" />
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Inventario por revisar" android:textColor="@color/texto" android:textSize="14sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/alertText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/texto_suave" android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView android:id="@+id/reviewInventory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:clickable="true" android:focusable="true" android:text="Revisar" android:textColor="@color/amarillo_texto" android:textSize="13sp" android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/fondo_boton_secundario"
+        android:stateListAnimator="@null"
+        android:text="CERRAR SESIÓN"
+        android:textColor="@color/verde_oscuro"
+        android:textStyle="bold" />
+    <include layout="@layout/navegacion_inferior" />
+</LinearLayout>
+
+
+
+
